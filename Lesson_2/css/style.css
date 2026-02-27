@@ -1,0 +1,54 @@
+/* --- Main container --- */
+main {
+    background-color: gray;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* center main horizontally */
+    padding: 20px;
+}
+
+/* --- Section Titles --- */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* --- Albums and Songs Flex Container --- */
+.album, .songs {
+    display: flex;
+    justify-content: center; /* center row */
+    gap: 20px;               /* space between boxes */
+    flex-wrap: wrap;          /* wrap on small screens */
+}
+
+/* --- Album and Song Boxes --- */
+.divAlbum, .songBox {
+    background: beige;
+    flex: 0 0 250px;         /* fixed width */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* center content inside box */
+    text-align: center;
+    border-radius: 10px;      /* optional rounded corners */
+}
+
+/* --- Images --- */
+.divAlbum img, .songBox img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* crop/fill nicely */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* --- Titles under images --- */
+.titles {
+    font-weight: bold;
+}
+
+/* --- Optional: Horizontal Rule Styling --- */
+hr {
+    margin: 40px 0;
+    border: 1px solid #ccc;
+}

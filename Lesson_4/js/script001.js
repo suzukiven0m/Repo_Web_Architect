@@ -55,3 +55,6 @@ console.log(benvenuto2);
 
 let presentazione = `Ciao, benvenuti in ${sede}`;
 console.log(presentazione);
+
+let valore = typeof undefined;
+console.log(valore);
